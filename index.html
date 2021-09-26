@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="like">
+        <div class="like__chosen">
+            <button class="like__arrow"><img src="./img/like-arrow.svg" alt=""></button>
+            <ul class="like__list">
+                <li class="pokemon__item like__item" data-aos = 'zoom-in-up' data-aos-duration = '1000'>
+                    <div class="pokemon__img">
+                        <img alt="img" src='https://picsum.photos/157' class="pokemon__img" id='poke'>
+                     </div>
+                      <div class="pokemon__content">
+                        <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
+                        <h2 class="pokemon__name">Dinosour</h2>
+                        <p class="pokemon__type">Grass, Poison</p>
+                        <div class="pokemon__quality">
+                            <span class="pokemon__weight"><span id="weight">6,8 kg</span></span>
+                            <span class="pokemon__age"><span id="age">99</span>age</span>
+                        </div>
+                      </div>
+                </li>
+                <li class="pokemon__item like__item" data-aos = 'zoom-in-up' data-aos-duration = '1000'>
+                    <div class="pokemon__img">
+                        <img alt="img" src='https://picsum.photos/157' class="pokemon__img" id='poke'>
+                     </div>
+                      <div class="pokemon__content">
+                        <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
+                        <h2 class="pokemon__name">Dinosour</h2>
+                        <p class="pokemon__type">Grass, Poison</p>
+                        <div class="pokemon__quality">
+                            <span class="pokemon__weight"><span id="weight">6,8 kg</span></span>
+                            <span class="pokemon__age"><span id="age">99</span>age</span>
+                        </div>
+                      </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img src="./img/pokemon_logo.png" alt="" class="header__logo">
+                <button class="header__btn"><img src="./img/heart.svg" alt=""></button>
+
+                <!-- form -->
+                <form action="" method="POST" class='header__form'>
+                    <select name="gross" id="gross">
+                        <option value="All">All</option>
+                    </select>
+                    <input type="search" name = 'searched__value' placeholder='Search' id='search'>
+                    <select name="sort" id="sort">
+                        <option value = 'a-z'>Aa-Zz</option>
+                        <option value = 'z-a'>Zz-Aa</option>
+                        <option value = ''>Young-Old</option>
+                        <option value = ''>Old-Young</option>
+
+                    </select>
+                    <button type="submit" class='header__submit'>Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="pokemon">
+        <div class="container">
+            <div class="pokemon__wrapper">
+                <ul class="pokemon__list">
+                  
+           
+                </ul>
+            </div>
+        </div>
+    </main>
+ 
+                 <template class="template">
+                    <li class="pokemon__item" data-aos = 'zoom-in-up' data-aos-duration = '1000'>
+                        <div class="pokemon__img">
+                            <img alt="img"  class="pokemon__img" id='poke'>
+                         </div>
+                          <div class="pokemon__content">
+                            <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
+                            <h2 class="pokemon__name"></h2>
+                            <p class="pokemon__type"></p>
+                            <div class="pokemon__quality">
+                                <span class="pokemon__weight"><span id="weight"></span></span>
+                                <span class="pokemon__age"><span id="age">99</span>age</span>
+                            </div>
+                          </div>
+                    </li>
+                </template>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="./utils.js"></script>
+    <script src='./pokemons.js'></script>
+    <script src='./app.js'></script>
+</body>
+</html>
