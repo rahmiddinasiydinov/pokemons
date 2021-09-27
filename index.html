@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemons</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -15,34 +16,7 @@
         <div class="like__chosen">
             <button class="like__arrow"><img src="./img/like-arrow.svg" alt=""></button>
             <ul class="like__list">
-                <li class="pokemon__item like__item" data-aos = 'zoom-in-up' data-aos-duration = '1000'>
-                    <div class="pokemon__img">
-                        <img alt="img" src='https://picsum.photos/157' class="pokemon__img" id='poke'>
-                     </div>
-                      <div class="pokemon__content">
-                        <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
-                        <h2 class="pokemon__name">Dinosour</h2>
-                        <p class="pokemon__type">Grass, Poison</p>
-                        <div class="pokemon__quality">
-                            <span class="pokemon__weight"><span id="weight">6,8 kg</span></span>
-                            <span class="pokemon__age"><span id="age">99</span>age</span>
-                        </div>
-                      </div>
-                </li>
-                <li class="pokemon__item like__item" data-aos = 'zoom-in-up' data-aos-duration = '1000'>
-                    <div class="pokemon__img">
-                        <img alt="img" src='https://picsum.photos/157' class="pokemon__img" id='poke'>
-                     </div>
-                      <div class="pokemon__content">
-                        <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
-                        <h2 class="pokemon__name">Dinosour</h2>
-                        <p class="pokemon__type">Grass, Poison</p>
-                        <div class="pokemon__quality">
-                            <span class="pokemon__weight"><span id="weight">6,8 kg</span></span>
-                            <span class="pokemon__age"><span id="age">99</span>age</span>
-                        </div>
-                      </div>
-                </li>
+           
 
             </ul>
         </div>
@@ -64,11 +38,12 @@
                     <select name="sort" id="sort">
                         <option value = 'a-z'>Aa-Zz</option>
                         <option value = 'z-a'>Zz-Aa</option>
-                        <option value = ''>Young-Old</option>
-                        <option value = ''>Old-Young</option>
+                        <option value = 'new-old'>Young-Old</option>
+                        <option value = 'old-new'>Old-Young</option>
 
                     </select>
                     <button type="submit" class='header__submit'>Search</button>
+                    
                 </form>
             </div>
         </div>
@@ -80,6 +55,7 @@
                   
            
                 </ul>
+
             </div>
         </div>
     </main>
@@ -90,7 +66,8 @@
                             <img alt="img"  class="pokemon__img" id='poke'>
                          </div>
                           <div class="pokemon__content">
-                            <button class="pokemon__like"><img src="./img/heart__small.svg" alt=""></button>
+                            <button type="button" class=" pokemon__like"></button
+                               >
                             <h2 class="pokemon__name"></h2>
                             <p class="pokemon__type"></p>
                             <div class="pokemon__quality">
@@ -100,6 +77,7 @@
                           </div>
                     </li>
                 </template>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

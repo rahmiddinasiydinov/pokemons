@@ -57,3 +57,29 @@
 
 
 }
+
+
+@media screen and (max-width:500px){
+    .header{
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #search{
+            max-width: 100%;
+            margin-left:0;
+        }
+        #sort{
+ 
+            margin-left: 0;
+    
+        }
+        &__submit{
+            margin-left: 0;
+     
+        }
+    
+    }
+}
